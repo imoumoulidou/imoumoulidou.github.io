@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>iromoumou: research</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- Header -->
+								<header id="header">
+<!-- 									<a href="index.html" class="logo"><strong>Editorial</strong> by HTML5 UP</a>-->
+ 									<ul class="icons">
+										<li><a target="_blank" href="https://www.linkedin.com/in/zafeiria-iro-moumoulidou-033771157" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>                                   
+<!-- 										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li> -->
+<!--										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li> -->
+									</ul>
+								</header>
+
+
+							<!-- Content -->
+								<section>
+                                    <div id="helper">
+									<header class="main">
+										<h2>Selected Projects</h2>
+                                        <!-- <span class="image left"><img src="images/pic11.jpg" alt="" /></span> -->
+									</header>
+
+									
+									<hr class="major" />
+
+<!-- 									<h3>Multi-FPGA Architectures for Real-Time Computation of Information Transfer</h3> -->
+                                        <h3>SpaceSaving Algorithm in a Distributed Setting using Apache Storm<span><font size="2" color="black"></font></span></h3>
+									    <a target="_blank" href="SpaceSaving_Presentation.pdf" class="button small">Presentation Slides</a>  
+									    <p>The aim of this semester project for the Special Topics in Database Systems graduate course was to study the Spacesaving algorithm for finding the frequent items in data streams and modify it appropriately so as to work in a decentralized environment. Moreover, we had to understand how the Storm platform works and processes the data so as to design an efficient topology for our problem. Therefore, we divide our problem into 4 stages, as it may be seen from the topology chosen. At first stage, we have the spouts which are responsible for reading the tuples coming from the stream. Next, come the wordnormalizer bolts which split the tuples readen to items, all of which are sent to the appropriate bolt of the next processing stage. The main concept is that different instances of the same item, go to the same bolt which is responsible for tracking its frequency. In the third stage of the processing, we have the SpaceSaving Bolts which are responsible for keeping m counters with the functionality described in Spacesaving algorithm and in the last stage we have the FreqItemEstimator Bolts which are responsible for finding which of the items, whose frequency is stored in the m counters, are indeed frequent according to the condition described in the algorithm. In parallel, in order to be able to examine the accuracy of the decentralized algorithm, we implement the CountItems Bolts, which keep track of the real frequency of each item and the FrequentItems Bolts, which based on the real frequencies of each item and the condition that an item must satisfy so as to be characterized as frequent, give the final frequent items. Finally, since we know the true frequent items, we use the precision and recall metric so as to test our algorithm.           
+										</p>
+
+									<hr class="major" />
+
+										<h3> Sentimental Analysis on Tweets <span><font size="3" color="black"> </font></span></h3>
+										<a target="_blank" href="presentation.pdf" class="button small">Presentation Slides</a> 
+										<p>The aim of this semester project for the Statistical Modelling & Pattern Recognition course was to build a binary classifier for Tweets, which were classified either as negative or positive. The model used was that of bag-of-words and before building the feature vectors for each class some text processing techniques were used so as to remove parts of speech that do not provide useful information. Furthermore, in order to select the most representative features, in our case unigrams, for each class two metrics were taken into account. At first, terms that are frequent in both classes are discarded and secondly we choose the most frequent terms of the class according to tf metric. The classifier used was Multinomial Naive Bayes and some experiments were conducted so as to see how the thresholds chosen for the metrics described above affect the performance of the classifier. </p>
+                                    
+                                    </div>  
+								</section>                          
+                            							<!-- Content -->
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner"> 
+
+							<!-- Search -->
+							<!--	<section id="search" class="alt"> -->
+							<!-- 		<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+							 	<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="research.html">Projects</a></li>
+
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact Information</h2>
+									</header>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="mailto:iromoumou@yahoo.gr">iromoumou@yahoo.gr</a></li>
+									</ul>
+								</section>
+							<!-- Section -->
+								<section>
+								<a href="curriculum-vitae.pdf" class="button icon fa-download">Download my CV</a>
+								</section>
+							<!-- Footer -->
+<!-- 								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer> -->
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
